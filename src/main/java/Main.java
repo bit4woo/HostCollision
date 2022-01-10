@@ -288,7 +288,7 @@ public class Main {
                         for (int i = txtIndex; i < collisionSuccessList.size(); i++) {
                             txtIndex++;
                             String data = String.format(
-                                    "%s%s, $\"Host: %s\" -k, title:%s, 匹配成功的数据包大小:%s, 状态码:%s 匹配成功 \r\n",
+                            		"curl %s%s $\"Host: %s\" -k, title:%s, 匹配成功的数据包大小:%s, 状态码:%s 匹配成功 \r\n",
                                     collisionSuccessList.get(i).get(0),
                                     collisionSuccessList.get(i).get(1),
                                     collisionSuccessList.get(i).get(2),
@@ -316,7 +316,7 @@ public class Main {
                     if (collisionSuccessList.size() > 0) {
                         for (List<String> log : collisionSuccessList) {
                             String successLog = String.format(
-                            		"%s%s, $\"Host: %s\" -k, title:%s, 匹配成功的数据包大小:%s, 状态码:%s 匹配成功 \r\n",
+                            		"curl %s%s $\"Host: %s\" -k, title:%s, 匹配成功的数据包大小:%s, 状态码:%s 匹配成功 \r\n",
                                     log.get(0), log.get(1), log.get(2),
                                     log.get(3), log.get(4), log.get(8));
                             System.out.println(successLog);
