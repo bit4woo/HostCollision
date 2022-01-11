@@ -67,7 +67,7 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <outputDirectory>
-                        ${project.build.directory}/HostCollision
+                        ${project.build.directory}/
                     </outputDirectory>
                 </configuration>
                 <!-- 添加此项后，可直接使用mvn package | mvn install -->
@@ -94,7 +94,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/HostCollision</outputDirectory>
+                            <outputDirectory>${project.build.directory}/</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>src/main/resources</directory>
